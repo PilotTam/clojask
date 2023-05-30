@@ -22,7 +22,7 @@
            [clojask.classes.DataStat DataStat]
            [clojask.classes.MGroup MGroup]
            [com.clojask.exception TypeException OperationException])
-  (:refer-clojure :exclude [filter group-by sort]))
+  (:refer-clojure :exclude [random-uuid filter group-by sort]))
 
 "The clojask lazy dataframe"
 

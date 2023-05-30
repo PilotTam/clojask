@@ -3,7 +3,7 @@
   :url "https://github.com/clojure-finance/clojask"
   :license {:name "MIT"
             :url "https://github.com/clojure-finance/clojask/blob/1.x.x/LICENSE"}
-  :dependencies [[org.clojure/clojure "1.10.1" :exclude clojure.core/random-uuid]
+  :dependencies [[org.clojure/clojure "1.10.1"]
                 ;;  [org.clojure/math.numeric-tower "0.0.4"]
                  [org.clojure/data.csv "1.0.0"]
                  ^{:voom {:repo "git@github.com:onyx-platform/onyx.git" :branch "master"}}
