@@ -1,4 +1,4 @@
-(defproject com.github.pilot/clojask "0.1.0"
+(defproject net.clojars.pilot "0.1.0"
   :description "Data analysis and manipulation library with parallel computing for larger-than-memory datasets"
   :url "https://github.com/clojure-finance/clojask"
   :license {:name "MIT"
@@ -22,6 +22,7 @@
              "--module-path=mods"
              "--add-modules=java.base"
              "--patch-module=java.base=mods/java.base"
+             "-XX:+UseG1GC" "-server"
              ]
   :profiles {:uberjar {:aot :all}}
   :mod {clojask {
@@ -37,7 +38,6 @@
   :source-paths      ["src/main/clojure"]
   :java-source-paths ["src/main/java"]
   :javac-options ["-target" "1.8" "-source" "1.8" "-Xlint:-options"]
-  :jvm-opts ["-XX:+UseG1GC" "-server"]
   :test-paths        ["test/clojask"]
   ;:java-test-paths   ["test/java"]
   ;;:injections [(.. System (setProperty "clojure.core.async.pool-size" "8"))]
